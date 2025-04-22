@@ -7,7 +7,7 @@
   --background-color: #f4f4f4; /* Light grey background */
   --background-light-color: #fff; /* White background */
   --gradient-bg-color: linear-gradient(180deg, #dfdfdf 0%, #f4f4f4 100%);
-  --border-radius: 0.5rem;
+  --border-radius: 10px;
   --border-thickness: 2px;
 }
 /* Basic Reset & Defaults */
@@ -36,7 +36,7 @@ button {
   text-align: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 3.125rem;
+  margin-bottom: 1.25rem;
 }
 
 .site-header img {
@@ -55,7 +55,7 @@ button {
 h1 {
   font-size: 2rem;
   line-height: 40px;
-  color: var(--main-text-color);
+  color: #333;
   font-weight: 700;
 }
 
@@ -75,7 +75,7 @@ h5 {
 }
 
 h5.subtitle {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.875rem;
 }
 
 /* Options Grid */
@@ -83,7 +83,7 @@ h5.subtitle {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 1.875rem; /* Space between options and button group */
   text-align: left;
 }
 
@@ -175,7 +175,7 @@ span.option-description {
 .btn {
   padding: 12px 25px;
   border: none;
-  border-radius: 25px; /* Rounded buttons */
+  border-radius: 67px; /* Rounded buttons */
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none; /* For potential <a> tags styled as buttons */
@@ -248,9 +248,12 @@ span.option-description {
     padding: 0 1rem; /* Add some padding on mobile */
     max-width: 100%; /* Full width on mobile */
   }
-
+  .container > h1 {
+    margin-bottom: 1rem;
+  }
   h5.subtitle {
     margin-bottom: 1.25rem; /* Less margin on mobile */
+    font-weight: 400; /* Lighter font weight */
   }
   .options-grid {
     grid-template-columns: 1fr; /* Stack options vertically */
@@ -265,6 +268,7 @@ span.option-description {
   .button-group {
     flex-direction: column; /* Stack buttons vertically */
     align-items: stretch; /* Make buttons full width */
+    gap: 1.25rem; /* Space between buttons */
   }
 
   .btn {
