@@ -67,7 +67,7 @@ h5 {
 }
 
 .container > h1 {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .container > h1 .highlight {
@@ -76,6 +76,18 @@ h5 {
 
 h5.subtitle {
   margin-bottom: 1.875rem;
+}
+/* unsub or update note */
+p.note {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--main-text-color);
+  margin-bottom: 1.875rem; /* Space between note and options */
+}
+
+p.note.first-line {
+  margin-bottom: 1rem;
 }
 
 /* Options Grid */

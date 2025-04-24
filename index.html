@@ -29,8 +29,7 @@
         resubscribe), just choose the option that suits you best.
       </h5>
 
-      <form action="#" method="post">
-        <!-- Add your form action URL here -->
+      <form id="preferencesForm" action="confirm_update_page.html" method="get">
         <div class="options-grid">
           <label for="once_week" class="option-card">
             <input
@@ -83,12 +82,11 @@
 
         <div class="button-group">
           <button type="submit" class="btn btn-primary">
-            <h5>Update My Email Preferences</h5>
+            <h5>Update my email preferences</h5>
           </button>
-          <button type="button" class="btn btn-secondary">
+          <a class="btn btn-secondary" id="stayUnsubscribed">
             <h5>Stay unsubscribed</h5>
-          </button>
-          <!-- Use type="button" if it doesn't submit the form, or change to an <a> link if needed -->
+          </a>
         </div>
       </form>
 
